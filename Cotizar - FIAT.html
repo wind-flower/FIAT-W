@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/main.css">
+
+    <link rel='stylesheet' href='https://use.fontawesome.com/releases/v5.10.2/css/all.css'>
+    <!-- <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato:400,400i,700,700i,
+    900,900i|Playfair+Display:400,400i,700,700i,900,900i"> -->
+    <title>FIAT</title>
+    <link rel="icon" type="image/png" href="imgs/fiat_logo.png">
+</head>
+<body>
+    <header>
+       
+        <figure>
+            <img src="imgs/fiat_logo.png" alt="FIAT" type="image/png" >
+        </figure>
+        <nav id="menu">                    
+            <ul id="items">
+                <li>Modelos</li>
+                <li>Prueba de manejo</li>
+                <li>Cotizar</li>
+                <li>Promociones</li>
+                <li>Distribuidores</li>
+            </ul>
+        </nav>
+        <a href="javascript:void(0);" class="icon" onclick="verMenu()">
+            <i class="fa fa-bars"></i>
+          </a>
+      
+    </header>
+    <main>
+        <article id="main-header">
+            <h5>COTIZADOR</h5>
+            <p id="main-line"><span></span> CITADIANO, AVENTURERO, DEPORTIVO <span></span>
+            </p>
+            <h1>Elige el tuyo</h1>
+             
+        </article>
+        <form  method="post">
+            <figure id="auto">
+                <img src="imgs/auto500L.png" alt="Fiat 500L rojo" type="image/png" >
+            </figure>
+            <section id="modelo-auto" > 
+            <article class="row justify-content-center">
+                <div class="col-12 col-md-4 auto-select">
+                    <label for="select-modelo">Modelo</label>
+                    <select name="" id="select-modelo" >
+                        <option selected>Selecionar</option>
+                    </select>                   
+                </div>
+                <div class="col-12 col-md-4 auto-select">
+                    <label for="select-version">Versión</label>
+                    <select name="" id="select-version">
+                        <option selected>Selecionar</option>
+                    </select>                   
+                </div>
+           
+                <div class="w-100"></div>
+                <div class="col-12 col-md-4 auto-select">
+                    <label for="select-edo">Estado</label>
+                    <select name="" id="select-edo">
+                        <option selected>Selecionar</option>
+                    </select>                   
+                </div>
+                <div class="col-12 col-md-4 auto-select">
+                    <label for="select-distribuidor">Distribuidor</label>
+                    <select name="" id="select-distribuidor">
+                        <option selected>Selecionar</option>
+                    </select>                   
+                </div>
+            </article>
+            </section>
+
+            <section id="informacion-personal" >
+               <div class="section-title">
+                   <span></span> 
+                   <h3>Datos personales</h3>
+                   <span></span>
+               </div>
+                <h5>Escribe tus datos personales</h5>
+                <article id="article-data" class="row">
+                    <div class="col-md-3 ml-md-auto">
+                        
+                        <label for="text-nombre">Nombre(s)</label>
+                        <input type="text" placeholder="EJ. JUAN" id="text-nombre" >                  
+                    </div>
+                    <div class="col-md-3 ml-md-auto">
+                        <label for="text-apellido-paterno">Apellido Paterno</label>
+                        <input type="text" placeholder="EJ. LÓPEZ"id="text-apellido-paterno">                  
+                    </div>
+                    <div class="col-md-3 ml-md-auto">
+                        <label for="text-apellido-materno">Apellido Materno</label>
+                        <input type="text" placeholder="EJ. TOVAR" id="text-apellido-materno">                  
+                    </div>
+                    <div class="w-100"></div>
+                    <div  class="col-md-3 ml-md-auto">
+                        <label for="text-email">Email</label>
+                        <input type="text" placeholder="TU@EMAIL.COM" id="text-email">                  
+                    </div>
+                    <div class="col-md-3 ml-md-auto">
+                        <label for="text-telefono">Telefono</label>
+                        <input type="text" placeholder="01.844.439.06" id="text-telefono">                  
+                    </div>
+                    <dov class="col"></dov>
+                </article>
+                <!-- <article class="row justify-content-center">
+
+                    <div class="col-sm-5 offset-sm-2 col-md-6 offset-md-0">
+                        
+                        <label for="text-nombre">Nombre(s)</label>
+                        <input type="text" placeholder="EJ. JUAN" id="text-nombre" >                  
+                    </div>
+                    <div class="col-sm-5 offset-sm-2 col-md-6 offset-md-0">
+                        <label for="text-apellido-paterno">Apellido Paterno</label>
+                        <input type="text" placeholder="EJ. LÓPEZ"id="text-apellido-paterno">                  
+                    </div>
+                    <div class="col-sm-5 offset-sm-2 col-md-6 offset-md-0">
+                        <label for="text-apellido-materno">Apellido Materno</label>
+                        <input type="text" placeholder="EJ. TOVAR" id="text-apellido-materno">                  
+                    </div>
+                </article>
+                <article class="row justify-content-center" >
+                    <div  class="col-sm-5 offset-sm-2 col-md-6 offset-md-0">
+                        <label for="text-email">Email</label>
+                        <input type="text" placeholder="TU@EMAIL.COM" id="text-email">                  
+                    </div>
+                    <div class="col-sm-5 offset-sm-2 col-md-6 offset-md-0">
+                        <label for="text-telefono">Telefono</label>
+                        <input type="text" placeholder="01.844.439.06" id="text-telefono">                  
+                    </div>
+                </article> -->
+
+                
+                <article class="row justify-content-center radio-group" >
+                    <label for="contactoVia">Deseo ser contactado por:</label>
+                        <div class="col contacto">
+                            <input type="radio" id="Telefono" name="contactoVia"  >
+                            <label for="Telefono">
+                                <i class="fas fa-phone-alt"></i>Telefono</label>
+                        </div>
+                        <div class="col contacto">
+                            <input type="radio" id="Email" name="contactoVia">
+                            <label for="Email"><i class="fas fa-envelope"></i>Email</label>
+                        </div>
+                        <div class="col contacto">
+                            <input type="radio" id="Ambos" checked name="contactoVia">
+                            <label for="Ambos">Ambos</label>
+                        </div>
+                   
+                </article>
+            </section>
+
+            <section id="pago">
+                <div class="section-title ">
+                    <span></span> 
+                    <h3>Forma de pago</h3>
+                    <span></span>
+                </div>              
+                <h5>Personaliza tu cotización</h5>
+                <article id="tipoDePago" class="row justify-content-center radio-group">
+                    <div class="col-4">
+                        <input type="radio" id="Contado" name="metodoDePago"  onclick="if(this.checked){pagarContado()}">
+                        <label for="Contado">Contado</label>
+                    </div>
+                    <div class="col-4" >
+                        <input type="radio" id="Credito" checked name="metodoDePago" onclick="if(this.checked){pagarPorCredito()}">
+                        <label for="Credito">Crédito</label>
+                    </div>
+                </article>
+               
+                    <article id="pagoXcredito" class="row justify-content-center">
+                        <div class="col-12 col-md-4 credito-info">
+                            <label for="txt-pago-enganche">Cantidad de enganche</label>
+                            <input type="text" placeholder="80,000,000" id="txt-pago-enganche">                  
+                        </div>
+                        <div class="col-12 col-md-4 credito-info">
+                            <label for="select-pago-plazo">Plazo</label>
+                            <select id="select-pago-plazo">
+                                <option selected>72 MESES</option>
+                            </select>                   
+                        </div>
+                    </article>
+            </section>
+
+            <section id="comentarios">
+                <div class="section-title">
+                    <span></span> 
+                    <h3>Comentarios</h3>
+                    <span></span>
+                </div>                  
+                <h5>Nos importa tus comentarios</h5>
+                <textarea name="" id="" cols="30" rows="4"></textarea>
+            </section>
+
+            <section id="form-end" >
+                <article>
+                    <div class="custom-control custom-checkbox">
+                        <input type="checkbox" class="custom-control-input" id="customCheck1">
+                        <label class="custom-control-label" for="customCheck1">He leído y acepto el aviso de privacidad</label>
+                      </div>
+                      <div class="custom-control custom-checkbox">
+                        <input type="checkbox" class="custom-control-input" id="customCheck1">
+                        <label class="custom-control-label" for="customCheck1">No deseo recibir promociones</label>
+                      </div>
+                </article>
+                <article>
+                    <input id="submit-form" type="submit" value="ENVIAR">
+                </article>
+            </section>
+            
+
+        </form>
+    </main>
+    <footer>
+
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js" integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf" crossorigin="anonymous"></script>
+    <script src="js/menu.js"></script>
+    <script src="js/main.js"></script>
+ 
+</body>
+</html>
